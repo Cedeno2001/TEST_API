@@ -1,0 +1,24 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:16
+    container_name: aeroporti-db
+    restart: always
+    networks:
+      - aeroporti-net
+
+  api:
+    build: .
+    container_name: aeroporti-api
+    restart: always
+    depends_on:
+      - db
+    
+    ports:
+      - "8000:8000"
+    networks:
+      - aeroporti-net
+
+networks:
+  aeroporti-net:

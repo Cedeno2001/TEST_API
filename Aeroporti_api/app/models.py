@@ -5,13 +5,6 @@ class Aeroporto(BaseModel):
     codice: int
     citta: int
 
-class AirportCreate(BaseModel):
+class AeroportoCreate(BaseModel):
     codice: str = Field(min_length=3)
     citta: str
-
-class PaginatedAirports(BaseModel):
-    page: int
-    size: int
-    total: int
-    data: str
-    
