@@ -13,5 +13,5 @@ class PaginatedAirports(BaseModel):
     page: int
     size: int
     total: int
-    data: str(data)
+    data: str
     

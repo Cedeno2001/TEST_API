@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from typing import List
 from ..models import Airport, AirportCreate
-from ...Aeroporti_api.tests import crud
+from ..Aeroporti_api import crud
 
 router = APIRouter(prefix="/airports", tags=["Airports"])
 

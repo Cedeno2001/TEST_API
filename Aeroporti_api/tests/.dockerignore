@@ -4,10 +4,6 @@ __pycache__/
 *.pyo
 *.pyd
 
-# Virtual environment (IMPORTANT - see explanation below)
-venv/
-.venv/
-
 # Test files
 tests/
 
